@@ -1,0 +1,46 @@
+.Movie {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #222;
+  gap: 20px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+ 
+}
+
+.movie-poster {
+  margin-right: 50px;
+  flex: 1;
+
+}
+
+.movie-text {
+  flex: 3;
+  margin-top: 10px;
+  align-self: flex-start;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .Movie {
+    flex-direction: column;
+  }
+
+  .movie-poster {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 330px) {
+  .movie-poster img {
+    width: 90vw;
+  }
+}
